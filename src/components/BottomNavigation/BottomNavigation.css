@@ -1,0 +1,194 @@
+.BottomNavigation{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #5f0DCD;
+	width: 100%;
+	display: flex;
+	padding: 10px 7px;
+	align-items: center;
+	z-index: 4;
+	justify-content: space-between;
+}
+.BottomNavigation a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	width: 20%;
+	opacity: 0.5;
+	text-shadow: -1px 1px 0 #111,
+	1px 1px 0 #333,
+	1px -1px 0 #000,
+	-1px -1px 0 #222;
+}
+
+.nameMenu{
+	display: none;
+}
+.BottomNavigation a:hover{
+	color: #fff;
+	opacity: 1;
+}
+.BottomNavigation a.active{
+	opacity: 1 !important;
+	border-bottom: 1px solid #fff !important;
+	font-weight: bold;
+}
+/* .BottomNavigation .active .nameMenu{
+	display: inline;
+	
+} */
+.BottomNavigation button{
+  width: 50px;
+  height: 25px;
+  background: #56CCF2;  /* fallback for old browsers */
+  color: #000;
+  position: relative;
+  border: 0;
+  transition: .4s transform linear;
+  z-index: 3;
+}
+
+.order-main{
+	position: fixed;
+	bottom: -8%;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	background-color: #8B64FD;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 100px;
+	height: 50px;
+	
+	transition: .4s bottom linear .2s, .2s width linear;
+	padding: 10px;
+	border: 3px solid #fff;
+	overflow: hidden;
+	width: 50px;
+	z-index: 3;
+
+}
+
+.order-main li{
+	position: relative;
+
+	list-style: none;
+	margin: 4px;
+	/* background-color: #fff; */
+	color: #fff;
+	border-radius: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 3px solid #fff; */
+	width: 50px;
+
+}
+.animated-buttton{
+	-moz-animation: AnimatedButton 1.6s infinite  linear; /* Firefox */
+	-webkit-animation: AnimatedButton 1.6s infinite linear; /* Safari and Chrome */
+	-o-animation: AnimatedButton 1s infinite    linear; /* Opera */
+	animation: AnimatedButton 1s infinite   linear;
+	animation-iteration-count: 1;
+}
+.animated-main{
+	-moz-animation: OrderMain 1.6s infinite  linear; /* Firefox */
+	-webkit-animation: OrderMain 1.6s infinite linear; /* Safari and Chrome */
+	-o-animation: OrderMain 1s infinite    linear; /* Opera */
+	animation: OrderMain 1s infinite   linear;
+	animation-iteration-count: 1;
+	bottom: 8%;
+	width: 270px;
+
+}
+.animated-main-li{
+	opacity: 0;
+	-moz-animation: OrderMain .4s infinite 0.7s  linear; /* Firefox */
+	-webkit-animation: OrderMain .4s infinite 0.7s linear; /* Safari and Chrome */
+	-o-animation: OrderMain .4s infinite 0.7s   linear; /* Opera */
+	animation:  OrderMainLi .4s infinite 0.7s forwards;
+	animation-iteration-count: 1;
+
+}
+.z-index-2{
+	z-index: 2;
+}
+.z-index-3{
+	z-index: 3;
+}
+.BottomNavigation button::before {
+	content: "";
+	position: absolute;
+	top: -12.7px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 12.7px solid #56CCF2;
+	z-index: 3;
+ }
+ .BottomNavigation button::after {
+	content: "";
+	position: absolute;
+	bottom: -12.7px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 12.7px solid #56CCF2;;
+ }
+.BottomNavigation button:active {
+	transform: scale(0.5) rotateZ(720deg);
+
+}
+.order-main .active{
+	color: #11111d !important;
+	border-bottom: 2px solid #11111d;
+}
+#covering_buttons_outside{
+	display: none;
+}
+@keyframes OrderMain {
+	0% {
+		width: 50px;
+	}
+	50% {
+		width: 50px;
+	}
+
+	100% {
+		width: 270px;
+	}
+
+ }
+ @keyframes OrderMainLi {
+	0% {
+		opacity: 0.5;
+
+
+	}
+	20% {
+		opacity: 0.6;
+
+
+	}
+	40% {
+		opacity: 0.7;
+
+
+	}
+	70% {
+		opacity: 0.8;
+
+
+	}
+	 100% {
+		opacity: 1;
+	} 
+ }
+
