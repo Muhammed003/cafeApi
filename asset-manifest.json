@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cafeApi/static/css/main.f11b7be3.css",
+    "main.js": "/cafeApi/static/js/main.61bfbe18.js",
+    "static/js/787.dee7490b.chunk.js": "/cafeApi/static/js/787.dee7490b.chunk.js",
+    "static/media/cafe.jpg": "/cafeApi/static/media/cafe.865b4cf8969366169da3.jpg",
+    "static/media/logo.svg": "/cafeApi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/cafeApi/index.html",
+    "main.f11b7be3.css.map": "/cafeApi/static/css/main.f11b7be3.css.map",
+    "main.61bfbe18.js.map": "/cafeApi/static/js/main.61bfbe18.js.map",
+    "787.dee7490b.chunk.js.map": "/cafeApi/static/js/787.dee7490b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f11b7be3.css",
+    "static/js/main.61bfbe18.js"
+  ]
+}
